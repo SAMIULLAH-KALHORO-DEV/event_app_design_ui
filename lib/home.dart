@@ -55,7 +55,7 @@ class Home extends StatelessWidget {
             height: 50,
             mColor: Pallete.greyColor,
             widget: Padding(
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              padding:const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               child: TextFormField(
                 decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.search),

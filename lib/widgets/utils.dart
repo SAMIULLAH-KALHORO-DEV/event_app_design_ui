@@ -5,7 +5,7 @@ class TextStyling {
       fontSize: 25, fontWeight: FontWeight.w800, fontFamily: 'Cera Pro');
   final h2 = const TextStyle(
       fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Cera Pro');
-  final h3 = TextStyle(
+  final h3 = const TextStyle(
       color: Colors.black38,
       fontWeight: FontWeight.w400,
       fontSize: 14,

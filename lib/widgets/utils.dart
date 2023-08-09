@@ -13,7 +13,9 @@ class TextStyling {
 }
 
 class Pallete {
+  static const Color bgColor = Color(0xFFF6F6FB);
   static const Color blackbgColor = Color(0xFF2B2E39);
+  static const Color containerColor = Color(0xFFD7D7DF);
   static const Color greyColor = Color(0xFFEAE9EE);
   static const Color dropBgColor = Color(0xFFFDEFD8);
   static const Color h3textColor = Color(0xFFFDEFD8);

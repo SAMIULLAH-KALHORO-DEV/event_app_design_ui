@@ -10,11 +10,14 @@ class TicketPopUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomContainer(
+    return  CustomContainer(
       width: 0.0,
       bRadius: 20,
       mColor: Pallete.blackbgColor,
       height: double.infinity / 2,
+      widget: Column(children: [
+        
+      ]),
     );
   }
 }

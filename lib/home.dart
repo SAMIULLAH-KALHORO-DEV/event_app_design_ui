@@ -133,7 +133,7 @@ class Home extends StatelessWidget {
             heading2: 'By Week Museum',
             imageurl: 'assets/images/mpic1.jpg',
           ),
-          SizedBox(height: 10),
+       const   SizedBox(height: 10),
           const CustomList(
             heading: 'Museum Week Fest',
             heading2: 'By Week Museum',

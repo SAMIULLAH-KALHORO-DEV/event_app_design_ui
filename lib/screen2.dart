@@ -1,4 +1,5 @@
 import 'package:event_app_design_ui/widgets/custom_container.dart';
+import 'package:event_app_design_ui/widgets/ticket_popup.dart';
 import 'package:event_app_design_ui/widgets/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -194,22 +195,19 @@ class Screen2 extends StatelessWidget {
       floatingActionButton: InkWell(
         onTap: () {
           showModalBottomSheet<void>(
+            isScrollControlled: true,
+            isDismissible: true,
             elevation: 0,
             backgroundColor: Colors.transparent,
             context: context,
             builder: (BuildContext context) {
-              return const CustomContainer(
-                width: 0.0,
-                bRadius: 20,
-                mColor: Pallete.blackbgColor,
-                height: double.infinity / 3,
-              );
+              return const TicketPopUp();
             },
           );
         },
         child: const CustomContainer(
           height: 60,
-          width: 2,
+          width: 1.1,
           bRadius: 30,
           mColor: Pallete.blackbgColor,
           widget: Center(

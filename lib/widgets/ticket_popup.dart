@@ -36,22 +36,60 @@ class TicketPopUp extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 1.5,
               widget: Padding(
                 padding: const EdgeInsets.all(20),
-                child: Column(children: [
-                  Text('Museum Week \nFest Ticket',
-                      textAlign: TextAlign.center,
-                      style: TextStyling.h1.copyWith(
-                        color: Colors.white,
-                      )),
-                  Text('Total will be active from',
-                      style: TextStyling.h3.copyWith(color: Colors.grey)),
-                  CustomContainer(
-                    width: 0.0,
-                    bRadius: 20,
-                    height: 80,
-                    mColor: Colors.white,
-                    widget: Row(children: const []),
-                  )
-                ]),
+                child: Column(
+                  children: [
+                    Text('Museum Week \nFest Ticket',
+                        textAlign: TextAlign.center,
+                        style: TextStyling.h1.copyWith(
+                          color: Colors.white,
+                        )),
+                    Text('Total will be active from',
+                        style: TextStyling.h3.copyWith(color: Colors.grey)),
+                    CustomContainer(
+                      width: 0.0,
+                      bRadius: 20,
+                      height: 80,
+                      mColor: Colors.white,
+                      widget: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text('09:00 PM', style: TextStyling.h2),
+                                  Text('May 21, 2022', style: TextStyling.h3)
+                                ]),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text('12:00 PM', style: TextStyling.h2),
+                                Text('May 22, 2022', style: TextStyling.h3)
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const Divider(
+                      thickness: 5,
+                      color: Colors.white,
+                    ),
+                    Align(
+                      alignment: Alignment.center,
+                      child: Text("0x2324345we232342sdf",
+                          style: TextStyling.h3.copyWith(color: Colors.grey)),
+                    ),
+                    const Image(
+                      height: 80,
+                      width: 300,
+                      image: AssetImage('assets/images/barcode.png'),
+                      fit: BoxFit.fill,
+                    )
+                  ],
+                ),
               ),
             ),
           ),

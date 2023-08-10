@@ -49,14 +49,12 @@ class TicketPopUp extends StatelessWidget {
                     bRadius: 20,
                     height: 80,
                     mColor: Colors.white,
-                    widget: Row(children:const [
-                      
-                    ]),
+                    widget: Row(children: const []),
                   )
                 ]),
               ),
             ),
-          )
+          ),
         ]),
       ),
     );

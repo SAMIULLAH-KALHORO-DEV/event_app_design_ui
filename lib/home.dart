@@ -1,4 +1,5 @@
 import 'package:event_app_design_ui/widgets/custom_container.dart';
+import 'package:event_app_design_ui/widgets/custom_list.dart';
 import 'package:event_app_design_ui/widgets/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               CustomContainer(
+                
                 height: 50,
                 width: 2,
                 mColor: Pallete.blackbgColor,
@@ -43,10 +45,10 @@ class Home extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 20),
-          Text("Today's March 24th", style: TextStyling().h3),
-          Text(
+          const Text("Today's March 24th", style: TextStyling.h3),
+          const Text(
             "Welcome, Jimmay!",
-            style: TextStyling().h1,
+            style: TextStyling.h1,
           ),
           const SizedBox(height: 10),
           CustomContainer(
@@ -55,7 +57,7 @@ class Home extends StatelessWidget {
             height: 50,
             mColor: Pallete.greyColor,
             widget: Padding(
-              padding:const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               child: TextFormField(
                 decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.search),
@@ -70,9 +72,9 @@ class Home extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-          Text(
+          const Text(
             "Nearby Event",
-            style: TextStyling().h2,
+            style: TextStyling.h2,
           ),
           const SizedBox(height: 10),
           CustomContainer(
@@ -88,12 +90,12 @@ class Home extends StatelessWidget {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           "The New Wateru \nMovement",
-                          style: TextStyling().h1,
+                          style: TextStyling.h1,
                         ),
-                        const CircleAvatar(
+                        CircleAvatar(
                           backgroundColor: Pallete.greyColor,
                           child: Icon(
                             Icons.save_outlined,
@@ -102,7 +104,7 @@ class Home extends StatelessWidget {
                         )
                       ],
                     ),
-                    Text("Today's March 24th", style: TextStyling().h3),
+                    const Text("Today's March 24th", style: TextStyling.h3),
                     const SizedBox(height: 20),
                     const CustomContainer(
                         height: 50,
@@ -122,10 +124,21 @@ class Home extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-          Text(
+          const Text(
             "Upcoming Event",
-            style: TextStyling().h2,
-          )
+            style: TextStyling.h2,
+          ),
+          const CustomList(
+            heading: 'Museum Week Fest',
+            heading2: 'By Week Museum',
+            imageurl: 'assets/images/mpic1.jpg',
+          ),
+          SizedBox(height: 10),
+          const CustomList(
+            heading: 'Museum Week Fest',
+            heading2: 'By Week Museum',
+            imageurl: 'assets/images/mpic2.jpg',
+          ),
         ]),
       ),
     );

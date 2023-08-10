@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class TextStyling {
-  final h1 = const TextStyle(
+  static const h1 = TextStyle(
       fontSize: 25, fontWeight: FontWeight.w800, fontFamily: 'Cera Pro');
-  final h2 = const TextStyle(
+  static const h2 = TextStyle(
       fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Cera Pro');
-  final h3 = const TextStyle(
+  static const h3 = TextStyle(
       color: Colors.black38,
       fontWeight: FontWeight.w400,
       fontSize: 14,
@@ -18,7 +18,7 @@ class Pallete {
   static const Color containerColor = Color(0xFFD7D7DF);
   static const Color greyColor = Color(0xFFEAE9EE);
   static const Color dropBgColor = Color(0xFFFDEFD8);
-  static const Color h3textColor = Color(0xFFFDEFD8);
+  static const Color  h3textColor = Color(0xFFFDEFD8);
 }
 
 

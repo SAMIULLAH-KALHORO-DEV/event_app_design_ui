@@ -29,6 +29,7 @@ class CustomList extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 10),
+        // ignore: sized_box_for_whitespace
         Container(
           height: 80,
           // color: Colors.black,

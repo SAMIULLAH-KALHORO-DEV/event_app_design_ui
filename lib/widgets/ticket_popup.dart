@@ -17,7 +17,8 @@ class TicketPopUp extends StatelessWidget {
       // height: 800,
       widget: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(children: [
+        child:
+            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           const Padding(
             padding: EdgeInsets.only(left: 120, right: 120),
             child: Divider(
@@ -37,12 +38,14 @@ class TicketPopUp extends StatelessWidget {
               widget: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text('Museum Week \nFest Ticket',
                         textAlign: TextAlign.center,
                         style: TextStyling.h1.copyWith(
                           color: Colors.white,
                         )),
+                    const SizedBox(height: 10),
                     Text('Total will be active from',
                         style: TextStyling.h3.copyWith(color: Colors.grey)),
                     CustomContainer(
@@ -77,6 +80,7 @@ class TicketPopUp extends StatelessWidget {
                       thickness: 5,
                       color: Colors.white,
                     ),
+                    const SizedBox(height: 30),
                     Align(
                       alignment: Alignment.center,
                       child: Text("0x2324345we232342sdf",
@@ -84,15 +88,31 @@ class TicketPopUp extends StatelessWidget {
                     ),
                     const Image(
                       height: 80,
-                      width: 300,
+                      width: 250,
                       image: AssetImage('assets/images/barcode.png'),
                       fit: BoxFit.fill,
-                    )
+                    ),
                   ],
                 ),
               ),
             ),
           ),
+          const Text(
+            'Show at Registration',
+            style: TextStyling.h3,
+          ),
+          const CustomContainer(
+            width: 0,
+            height: 50,
+            mColor: Pallete.containerColor,
+            bRadius: 20,
+            widget: Center(
+              child: Text(
+                "Continue",
+                style: TextStyling.h2,
+              ),
+            ),
+          )
         ]),
       ),
     );
